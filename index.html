@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Premier League</title>
+    <link rel="icon" href="logo_btn/favicon.ico" type="image/png">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style1.css"> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/cf845565b5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!--------- HEADER STARTS FROM HERE --------->
+
+    <header>
+
+        <nav class="navbar">
+            
+            <div class="left-container">
+                <div class="logo">
+                    <img src="logo_btn/ipl-logo.png" alt="logo">
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="index.html"><i class="fa-solid fa-house-user"></i> Home</a></li>
+                        <li><a href="#teams"><i class="fa-solid fa-user-group"></i> Teams</a></li>
+                        <li><a href="#about"><i class="fa-solid fa-address-card"></i> About</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="right-container">
+                <div class="search-input ">
+                    <a href="" target="_blank" hidden></a>
+                    <input type="text" placeholder="Enter team code...eg - MI" />
+                    <div class="autocom-box">
+                        <!-- LIST FOR SUGGESTIONS -->
+                    </div>
+                    <div class="icon"><i class="fas fa-search"></i></div>
+                </div>
+
+                <a href="addteam.html"><button id="add-team-button" class="add-button" onclick="addteamclicked()">
+                    <i class="fa-solid fa-plus"></i> Add Team 
+                </button></a>
+                <a href="addplayer.html"><button id="add-player-button" class="add-button" onclick="addPlayerClicked()">
+                    <i class="fa-solid fa-plus"></i> Add Player
+                </button></a>
+            </div>
+        </nav>
+
+        
+
+    </header>
+
+<!--------- HEADER ENDS HERE --------->
+
+
+<!--------- SLIDER STARTS HERE --------->
+
+    <div class="slider">
+
+        <!-- SLIDER IMAG LIST -->
+        <div class="slider-list">
+            <div class="slider-item">
+                <img src="slider_images/img1.webp" alt="img1">
+            </div>
+
+            <div class="slider-item">
+                <img src="slider_images/img2.jpg" alt="img2">
+            </div>
+
+            <div class="slider-item">
+                <img src="slider_images/img3.jpg" alt="img3">
+            </div>
+
+            <div class="slider-item">
+                <img src="slider_images/img4.jpg" alt="img4">
+            </div>
+
+            <div class="slider-item">
+                <img src="slider_images/img5.jpg" alt="img5">
+            </div>
+        </div>
+
+        <!-- BUTTONS - PREVIOUS $ NEXT -->
+        <div class="slider-btn">
+            <button id="prev">
+                <img src="logo_btn/btn-prev.png" alt="Previous_btn">
+            </button>
+
+            <button id="next">
+                <img src="logo_btn/btn-next.png" alt="Next_btn">
+            </button>
+        </div>
+
+        <!-- BUTTON DOTS (5 images = 5 dots) -->
+        <ul class="dots">
+            <li class="active1"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+<!---------  SLIDER ENDS HERE --------->
+
+
+<!--------- TEAMS STARTS HERE --------->
+
+    <section id="teams">
+         
+        <h2 class="section-heading">Cricket IPL TEAMS</h2>
+    <div id="first-main">
+
+      <div id="container_teams">
+      
+      </div>
+
+    </div>
+    </section>
+
+<!--------- TEAMS ENDS HERE --------->
+
+
+<!--------- ABOUT STARTS HERE --------->
+
+<section id="about">
+    <div class="about-ipl">
+        <div class="main">
+            <h1>About IPL 2023 :</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat officiis nemo nihil illo quas tenetur repudiandae alias minus provident cupiditate expedita enim incidunt harum iusto, pariatur dignissimos, ipsa consectetur voluptatum, eveniet accusantium magnam laudantium autem amet. Odit adipisci temporibus reiciendis.</p>
+
+            <div class="follow">
+                <span>Follow Us For More : </span>
+                <a href="https://twitter.com/IPL"><i class="fa-brands fa-twitter"></i></a>
+                &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                <a href="https://www.instagram.com/iplt20/"><i class="fa-brands fa-instagram"></i></a>
+                &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                <a href="https://www.facebook.com/IPL/"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+
+        <div class="left-side">
+            <img src="slider_images/img3.jpg" width="700px"></img>
+        </div>
+    </div>
+</section>
+
+<!--------- ABOUT ENDS HERE --------->
+
+
+<!--------- FOOTER STARTS HERE --------->
+
+<footer>
+    <div class="top-sponsor">
+        <h5>TITLE SPONSOR</h5>
+        <a href="https://www.tata.com/"><img src="sponsors/tata.png" alt="tata_logo" width="100px"></a>
+    </div>
+
+    <div class="sponsors">
+        <div class="official-partner">
+            <h5>Official Partners</h5>
+            <div class="official">
+                <a href="https://www.dream11.com/fantasy-cricket"><img src="sponsors/sp1-dream11.png" alt="Dream11"></a>
+                <a href="https://cred.club/"><img src="sponsors/sp2-cred.png" alt="Cred"></a>
+                <a href="https://upstox.com/"><img src="sponsors/sp3-upstock.png" alt="UpStock"></a>
+                <a href="https://www.rupay.co.in/"><img src="sponsors/sp4-rupay.png" alt="RuPay"></a>
+                <a href="https://www.visitsaudi.com/en"><img src="sponsors/sp5-saudi.png" alt="Visit Saudi"></a>
+                <a href="https://www.herbalife.co.in/"><img src="sponsors/sp6-herbalife.png" alt="Herbalife"></a>
+            </div>
+        </div>
+
+        <div class="more-partners">
+            <div class="more">
+                <h5>Official orange cap and purple cap partner</h5>
+                <a href="https://www.aramco.com/"><img src="sponsors/ms1-aramco.png" alt="aramco" width="150px"></a>
+            </div>
+
+            <div class="more">
+                <h5>Official umpire partner</h5>
+                <a href="https://paytm.com/"><img src="sponsors/ms2-paytm.webp" alt="paytm" width="100px" class="img-bg"></a>
+            </div>
+
+            <div class="more">
+                <h5>Official strategic timeout partner</h5>
+                <a href="https://www.ceat.com/"><img src="sponsors/ms3-ceat.webp" alt="ceat" width="100px" class="img-bg"></a>
+            </div>
+
+            <div class="more">
+                <h5>Official broadcaster</h5>
+                <a href="https://www.hotstar.com/in"><img src="sponsors/ms4-StarSports.png" alt="StarSports" width="100px"></a>
+            </div>
+
+            <div class="more">
+                <h5>Official digital streaming partner</h5>
+                <a href="https://www.jiocinema.com/"><img src="sponsors/ms5-Jio Cinema.png" alt="JioCinema" width="100px"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="foot-links">
+        <div class="foot-comp">
+            <div class="foot">
+                <h4>About</h4>
+                <a href="#"><i class="fa-solid fa-angles-right"></i> About</a>
+                <a href="#"><i class="fa-solid fa-angles-right"></i> Anti Corruption Policy</a>
+                <a href="#"><i class="fa-solid fa-angles-right"></i> Anti Doping Policy</a>
+                <a href="#"><i class="fa-solid fa-angles-right"></i> TUE Application Form</a>
+                <a href="#"><i class="fa-solid fa-angles-right"></i> Anti Discrimination Policy</a>
+                <a href="#"><i class="fa-solid fa-angles-right"></i> Clothing and Equipment Regulations</a>
+                <a href="#"><i class="fa-solid fa-angles-right"></i> Image Use Term</a>
+            </div>
+
+            <div class="foot">
+                <h4>Guidelines</h4>
+                <a href="#"><i class="fa-solid fa-angles-right"></i> IPL Code of Conduct</a>
+                <a href="#"><i class="fa-solid fa-angles-right"></i> Brand and Protection Guidelines</a>
+                <a href="#"><i class="fa-solid fa-angles-right"></i> Match Playing Conditions</a>
+                <a href="#"><i class="fa-solid fa-angles-right"></i> PMOA Minimum Standards</a>
+                <a href="#"><i class="fa-solid fa-angles-right"></i> Suspect Action Policy</a>
+            </div>
+
+            <div class="foot">
+                <h4>Contact</h4>
+                <a href="#"><i class="fa-solid fa-angles-right"></i> Contact Us</a>
+                <a href="#"><i class="fa-solid fa-angles-right"></i> Sponsorship</a>
+                <a href="#"><i class="fa-solid fa-angles-right"></i> Privacy Policy</a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            
+            <p>Copyright © <span>Project : Somnath Mandal 🌎 </span></p>
+        </div>
+    </div>
+</footer>
+
+<!--------- FOOTER ENDS HERE --------->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <script src="index.js"></script>
+</body>
+</html>
